@@ -1,0 +1,185 @@
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/layout";
+
+$color-arr:red blue yellow pink orange green gray yellowgreen;
+
+$size:8;
+@mixin center($type:null){
+  position: absolute;
+  @if $type==x{
+    left: 0;
+    right: 0;
+    margin:{
+      left:auto;
+      right:auto;
+    }
+  }@else if $type==y{
+    top:0;
+    bottom:0;
+    margin:{
+      top: auto;
+      bottom: auto;
+    }
+  }@else {
+    top:0;
+    bottom:0;
+    left: 0;
+    right: 0;
+    margin:{
+      top: auto;
+      bottom: auto;
+      left:auto;
+      right:auto;
+    }
+  }
+}
+@mixin show($width:100%,$height:100%,$bg-color:#000){
+  width: $width;
+  height: $height;
+  background: $bg-color;
+}
+.root{
+  font-size: 100px;
+  margin: 0 auto;
+  background: red;
+  max-width: 640px;
+  height: 100vh;
+  position: relative;
+  .swiper-container{
+    width: 100%;
+    height: 100%;
+    .swiper-slide{
+        background: url("../img/big-bg.webp");
+        position: relative;
+    }
+    .swiper-slide:nth-child(1){
+
+      .box1{
+        @include center();
+        @include show(90%,90%);
+        opacity: 0;
+        &.active{
+          @include animation(s1box1ani 0.5s linear 0s 1 forwards);
+        }
+        @include keyframes(s1box1ani){
+          0%{
+           opacity: 1;
+            transform: rotate(120deg);
+          }
+          100%{
+            transform: rotate(0);
+            opacity: 1;
+          }
+        }
+      }
+      .box2{
+        @include center();
+        @include show(80%,84%,blue);
+        opacity: 0;
+        &.active{
+          @include animation(s1box2ani 0.5s linear 0s 1 forwards);
+        }
+        @include keyframes(s1box2ani){
+          0%{
+            opacity: 1;
+            transform: rotate(-120deg);
+          }
+          100%{
+            transform: rotate(0);
+            opacity: 1;
+          }
+        }
+      }
+      .box3{
+        @include center();
+        @include show(70%,78%,#00ff00);
+        &.active{
+          @include animation(s1box3ani 0.5s linear 0.5s 1 forwards);
+        }
+        opacity: 0;
+        @include keyframes(s1box3ani){
+          0%{
+            opacity: 1;
+            transform: scale(0.5);
+          }
+          100%{
+            transform: scale(1);
+            opacity: 1;
+          }
+        }
+      }
+      .dl1{
+        @include show(2.4rem,5rem,url("../img/DL1.webp") no-repeat center/100% 100%);
+        position: absolute;
+        left: -0.7rem;
+        transition: all 0.2s linear 1s;
+        opacity: 0;
+        &.active{
+          @include animation(s1dl1ani1 1s linear 1s forwards);
+        }
+        @include keyframes(s1dl1ani1){
+          0%{
+            opacity: 1;
+            top:-5rem;
+          }
+          60%{
+            opacity: 1;
+            top:-0.7rem;
+          }
+          80%{
+            opacity: 1;
+            top:-1.3rem;
+          }
+          100%{
+            opacity: 1;
+            top:-1rem;
+          }
+        }
+      }
+    }
+  }
+  .jiantou{
+    width: 0.45rem;
+    height: 0.35rem;
+    background: yellow;
+    @include center(x);
+    z-index: 9999;
+    bottom: 0.3rem;
+    background: url("../img/jiantou.png") no-repeat center center/100% 100%;
+    @include animation(jtmove 1.5s ease 0s infinite);
+    @include keyframes(jtmove){
+      0%{
+        bottom:0.3rem;
+        opacity: 1;
+      }
+      100%{
+        bottom:0.6rem;
+        opacity: 0;
+      }
+
+    }
+  }
+  .music{
+    position: absolute;
+    z-index: 9999;
+    top: 0.3rem;
+    right: 0.4rem;
+    border-radius: 50%;
+    width: 0.8rem;
+    height: 0.8rem;
+    background: url("../img/music_off.8d94020a5c.png") no-repeat center/100% 100%;
+    &.play{
+      @include animation(musicmove 1.5s linear 0s infinite);
+    }
+    @include keyframes(musicmove){
+      0%{
+        transform: rotate(0);
+      }
+      100%{
+        transform: rotate(360deg);
+      }
+    }
+  }
+}
+

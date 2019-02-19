@@ -1,0 +1,398 @@
+/* line 5, ../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 42, ../compass/sass/index.scss */
+.root {
+  font-size: 100px;
+  margin: 0 auto;
+  background: red;
+  max-width: 640px;
+  height: 100vh;
+  position: relative;
+}
+/* line 49, ../compass/sass/index.scss */
+.root .swiper-container {
+  width: 100%;
+  height: 100%;
+}
+/* line 52, ../compass/sass/index.scss */
+.root .swiper-container .swiper-slide {
+  background: url("../img/big-bg.webp");
+  position: relative;
+}
+/* line 58, ../compass/sass/index.scss */
+.root .swiper-container .swiper-slide:nth-child(1) .box1 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  height: 90%;
+  background: #000;
+  opacity: 0;
+}
+/* line 62, ../compass/sass/index.scss */
+.root .swiper-container .swiper-slide:nth-child(1) .box1.active {
+  -moz-animation: s1box1ani 0.5s linear 0s 1 forwards;
+  -webkit-animation: s1box1ani 0.5s linear 0s 1 forwards;
+  animation: s1box1ani 0.5s linear 0s 1 forwards;
+}
+@-moz-keyframes s1box1ani {
+  0% {
+    opacity: 1;
+    transform: rotate(120deg);
+  }
+  100% {
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes s1box1ani {
+  0% {
+    opacity: 1;
+    transform: rotate(120deg);
+  }
+  100% {
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
+@keyframes s1box1ani {
+  0% {
+    opacity: 1;
+    transform: rotate(120deg);
+  }
+  100% {
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
+/* line 76, ../compass/sass/index.scss */
+.root .swiper-container .swiper-slide:nth-child(1) .box2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 84%;
+  background: blue;
+  opacity: 0;
+}
+/* line 80, ../compass/sass/index.scss */
+.root .swiper-container .swiper-slide:nth-child(1) .box2.active {
+  -moz-animation: s1box2ani 0.5s linear 0s 1 forwards;
+  -webkit-animation: s1box2ani 0.5s linear 0s 1 forwards;
+  animation: s1box2ani 0.5s linear 0s 1 forwards;
+}
+@-moz-keyframes s1box2ani {
+  0% {
+    opacity: 1;
+    transform: rotate(-120deg);
+  }
+  100% {
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes s1box2ani {
+  0% {
+    opacity: 1;
+    transform: rotate(-120deg);
+  }
+  100% {
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
+@keyframes s1box2ani {
+  0% {
+    opacity: 1;
+    transform: rotate(-120deg);
+  }
+  100% {
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
+/* line 94, ../compass/sass/index.scss */
+.root .swiper-container .swiper-slide:nth-child(1) .box3 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  height: 78%;
+  background: #00ff00;
+  opacity: 0;
+}
+/* line 97, ../compass/sass/index.scss */
+.root .swiper-container .swiper-slide:nth-child(1) .box3.active {
+  -moz-animation: s1box3ani 0.5s linear 0.5s 1 forwards;
+  -webkit-animation: s1box3ani 0.5s linear 0.5s 1 forwards;
+  animation: s1box3ani 0.5s linear 0.5s 1 forwards;
+}
+@-moz-keyframes s1box3ani {
+  0% {
+    opacity: 1;
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes s1box3ani {
+  0% {
+    opacity: 1;
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes s1box3ani {
+  0% {
+    opacity: 1;
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+/* line 112, ../compass/sass/index.scss */
+.root .swiper-container .swiper-slide:nth-child(1) .dl1 {
+  width: 2.4rem;
+  height: 5rem;
+  background: url("../img/DL1.webp") no-repeat center/100% 100%;
+  position: absolute;
+  left: -0.7rem;
+  transition: all 0.2s linear 1s;
+  opacity: 0;
+}
+/* line 118, ../compass/sass/index.scss */
+.root .swiper-container .swiper-slide:nth-child(1) .dl1.active {
+  -moz-animation: s1dl1ani1 1s linear 1s forwards;
+  -webkit-animation: s1dl1ani1 1s linear 1s forwards;
+  animation: s1dl1ani1 1s linear 1s forwards;
+}
+@-moz-keyframes s1dl1ani1 {
+  0% {
+    opacity: 1;
+    top: -5rem;
+  }
+  60% {
+    opacity: 1;
+    top: -0.7rem;
+  }
+  80% {
+    opacity: 1;
+    top: -1.3rem;
+  }
+  100% {
+    opacity: 1;
+    top: -1rem;
+  }
+}
+@-webkit-keyframes s1dl1ani1 {
+  0% {
+    opacity: 1;
+    top: -5rem;
+  }
+  60% {
+    opacity: 1;
+    top: -0.7rem;
+  }
+  80% {
+    opacity: 1;
+    top: -1.3rem;
+  }
+  100% {
+    opacity: 1;
+    top: -1rem;
+  }
+}
+@keyframes s1dl1ani1 {
+  0% {
+    opacity: 1;
+    top: -5rem;
+  }
+  60% {
+    opacity: 1;
+    top: -0.7rem;
+  }
+  80% {
+    opacity: 1;
+    top: -1.3rem;
+  }
+  100% {
+    opacity: 1;
+    top: -1rem;
+  }
+}
+/* line 142, ../compass/sass/index.scss */
+.root .jiantou {
+  width: 0.45rem;
+  height: 0.35rem;
+  background: yellow;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 9999;
+  bottom: 0.3rem;
+  background: url("../img/jiantou.png") no-repeat center center/100% 100%;
+  -moz-animation: jtmove 1.5s ease 0s infinite;
+  -webkit-animation: jtmove 1.5s ease 0s infinite;
+  animation: jtmove 1.5s ease 0s infinite;
+}
+@-moz-keyframes jtmove {
+  0% {
+    bottom: 0.3rem;
+    opacity: 1;
+  }
+  100% {
+    bottom: 0.6rem;
+    opacity: 0;
+  }
+}
+@-webkit-keyframes jtmove {
+  0% {
+    bottom: 0.3rem;
+    opacity: 1;
+  }
+  100% {
+    bottom: 0.6rem;
+    opacity: 0;
+  }
+}
+@keyframes jtmove {
+  0% {
+    bottom: 0.3rem;
+    opacity: 1;
+  }
+  100% {
+    bottom: 0.6rem;
+    opacity: 0;
+  }
+}
+/* line 163, ../compass/sass/index.scss */
+.root .music {
+  position: absolute;
+  z-index: 9999;
+  top: 0.3rem;
+  right: 0.4rem;
+  border-radius: 50%;
+  width: 0.8rem;
+  height: 0.8rem;
+  background: url("../img/music_off.8d94020a5c.png") no-repeat center/100% 100%;
+}
+/* line 172, ../compass/sass/index.scss */
+.root .music.play {
+  -moz-animation: musicmove 1.5s linear 0s infinite;
+  -webkit-animation: musicmove 1.5s linear 0s infinite;
+  animation: musicmove 1.5s linear 0s infinite;
+}
+@-moz-keyframes musicmove {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes musicmove {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes musicmove {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
